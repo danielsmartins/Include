@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Include Engenharia - Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#sobre">Sobre a Include</a></li>
+                <li><a href="#perfil">Quem é Daniel?</a></li>
+                <li><a href="#posts">Posts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Sobre a Include Engenharia -->
+    <section id="sobre" class="include-info section" >
+        <div class="title-wrapper">
+            <h2>Include Engenharia, quem são?</h2>
+        </div>
+        <div class="content-wrapper">
+            
+            <div class="image-column">
+                <img src="../images/Include.png" alt="Logo da Include Engenharia" class="include-logo">
+            </div>
+            
+            <div class="text-column">
+                <p><a target="_blank" href="https://include.ct.ufrn.br/">A Include Engenharia</a> é uma <em><a target="_blank" href="https://brasiljunior.org.br/conheca-o-mej">empresa júnior</a></em> dos cursos de Ciências e Tecnologia, Engenharia de Computação, Mecatrônica e Telecomunicações da UFRN. A empresa surgiu em agosto de 2015, a partir do desejo de um grupo de alunos em desenvolver uma vivência profissional plena e voluntária.</p>
+                <p>A sua missão é ser o elo entre a sociedade e o futuro, conectando pessoas através de sistemas de informação e automação, impactando vidas e potencializando o desenvolvimento profissional de seus membros.</p>
+                <p>Dentre os serviços prestados pela Include estão a automação residencial, otimização de Wi-Fi e desenvolvimento mobile.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção do Perfil Pessoal -->
+    <section id="perfil" class="perfil-info">
+        <div class="title-wrapper">
+            <h2>Quem é Daniel?</h2>
+        </div>
+        <div class="content-wrapper">
+    
+            <!-- Coluna da imagem -->
+            <div class="image-column">
+                <img src="../images/Daniel.png" alt="Imagem de Daniel" class="perfil-imagem">
+            </div>
+    
+            <!-- Coluna de texto -->
+            <div class="text-column">
+                <h3>Perfil Técnico</h3>
+                <p>Olá, me chamo Daniel Silva, atualmente estou cursando o 2º período do Bacharelado em Tecnologia da Informação (BTI) no Instituto Metrópole Digital (IMD).</p>
+                <p>Possuo conhecimentos em HTML, CSS, Javascript, Python, Java e lógica de programação. Entre as minhas habilidades também estão: Inglês avançado, capacidade de comunicação, liderança, trabalho em equipe e controle emocional.</p>
+                <p>Na área da computação e tecnologia, tenho interesse em sistemas web e em cloud computing, áreas onde irei focar meus estudos.</p>
+    
+                <h3>Perfil Pessoal</h3>
+                <p>Entre os meus hobbies favoritos estão ir para a academia, jogar vôlei e jogar no PC (esse último é meio óbvio). Gosto de praticar quase qualquer esporte (não que eu seja bom neles kkkk).</p>
+                <p>No meu tempo livre, além dos meus hobbies, gosto de passar um tempo com família e amigos e aproveitar um tempo de qualidade com eles, quando as obrigações deixam.</p>
+    
+                <p>Devo entrar na Include pois minhas habilidades podem ajudar o grupo de forma geral e as habilidades que forem requisitadas e eu ainda não dominar, com certeza irei me aprimorar para um maior desenvolvimento da empresa e pessoal também. Além disso, no pouco contato que tive com os membros, gostei bastante das relações interpessoais dentro da empresa e creio que vou me adequar bastante ao ambiente.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="posts" class="posts">
+        <h2>Posts</h2>
+    
+        <!-- Container com postagens  -->
+        <div class="post-container">
+            
+            <div class="post">
+                <h3 class="post-title">Projeto utilizando da imersão da alura</h3>
+                <img src="images/projeto.png" alt="Projeto">
+                <p class="post-content">
+                    O projeto consiste em uma aplicação web que tem uma que tem uma base de dados sobre os filmes e séries lançados em 2024 e uma ferramenta de pesquisa que indica o título, descrição e a plataforma na qual o conteúdo está disponível.
+
+                    Confira como ficou <a href="https://filmes-e-series-kappa.vercel.app/" target="_blank">aqui.</a>
+                </p>
+            </div>
+    
+            
+            <div class="post">
+                <h3 class="post-title">Coração feito em python</h3>
+                <p class="post-content">Uma página de destino
+                    Um simples codigo em python, mas que usei a biblioteca do turtle que tinha visto na matéria de PC(Pensamento Computacional) e alguns conhecimentos da materia de ME(Matematica Elementar).
+                    <a href="https://github.com/danielsmartins/Heart" target="_blank">Link do código no github</a>
+
+                </p>
+            </div>
+        </div>
+        <div class="new-post-form">
+            <h3>Criar Novo Post</h3>
+            <form id="postForm">
+                <label for="postTitle">Título do Post:</label>
+                <input type="text" id="postTitle" name="postTitle" required>
+    
+                <label for="postContent">Conteúdo:</label>
+                <textarea id="postContent" name="postContent" required></textarea>
+
+                <label for="postImage">Imagem:</label>
+                <input type="file" id="postImage" name="postImage" accept="image/*">
+    
+                <label for="postVisible">Visível?</label>
+                <input type="checkbox" id="postVisible" name="postVisible" checked>
+    
+                <button type="submit">Criar Post</button>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- Footer  -->
+    <footer class="footer">
+
+        
+        <div class="contact-links">
+            <a href="https://www.linkedin.com/in/daniel-silva-martins" 
+            target="_blank" 
+            class="contact-disc">
+                <i class="fab fa-linkedin"></i>Linkedin
+            </a>
+            <a href="https://github.com/danielsmartins" target="_blank" 
+            class="contact-disc">
+                <i class="fab fa-github"></i>Github
+            </a>
+            <a href="mailto:danielsmartins@gmail.com"
+            class=" contact-disc" 
+            target="_blank">
+                <i class="fas fa-envelope"></i>Email
+            </a>
+            <a href="https://www.instagram.com/danielslvm02/" target="_blank" 
+            class="contact-disc">
+                <i class="fab fa-instagram"></i>Instagram
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
